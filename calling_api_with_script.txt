@@ -1,5 +1,5 @@
  $(document).ready(function () {
-        var paths = "file:///D:/Development/alamgir/Practice/foottest/TheTollsAct.html";
+        var paths = "file:///D:/Development/imran/Practice/foottest/TheTollsAct.html";
         $.ajax({
             type: "GET",
             url: "http://localhost:16880/api/values/",
