@@ -1,0 +1,25 @@
+ $(document).ready(function () {
+        var paths = "file:///D:/Development/alamgir/Practice/foottest/TheTollsAct.html";
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:16880/api/values/",
+            data: { path: paths, fileName:"footn" },
+            //contentType: "application/json; charset=utf-8",
+            dataType: "xml",
+
+            success: function (data, textStatus, xhr) {
+
+                console.log(data);
+
+            },
+
+            error: function (xhr, textStatus, errorThrown) {
+                console.log(xhr);
+                console.log('Error in Operation');
+                console.log(textStatus);
+                console.log('Error in Operation');
+                console.log(errorThrown);
+            }
+
+        });
+    });
